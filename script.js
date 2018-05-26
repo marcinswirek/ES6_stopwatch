@@ -59,6 +59,7 @@ class StopWatch {
       this.times.seconds = 0;
     }
   }
+
   results(times) {
     let elementLi = document.createElement("li");
     let resultsEl = document.querySelector(".results");
@@ -76,23 +77,13 @@ class StopWatch {
     this.running = false;
     clearInterval(this.watch);
     this.results(this.times);
-    this.reset(); //zapobiega ponownemu dodaniu do listy uzyskanego czasu
+    this.reset();
   }
 
   clearWatch() {
     this.print();
   }
 
-  /*clearResults(){
-		let childs = document.querySelectorAll('li');
-		const parentUl = document.querySelector('.results');
-		let childsLength = childs.length;
-		for(let i=0;i <= childsLength; i++){
-			parentUl.removeChild(childs[i]);
-			
-		}
-		
-	}*/
   clearResults() {
     const parentUl = document.querySelector(".results");
     while (parentUl.firstChild) {
