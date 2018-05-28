@@ -93,25 +93,13 @@ var StopWatch = function () {
       this.running = false;
       clearInterval(this.watch);
       this.results(this.times);
-      this.reset(); //zapobiega ponownemu dodaniu do listy uzyskanego czasu
+      this.reset();
     }
   }, {
     key: "clearWatch",
     value: function clearWatch() {
       this.print();
     }
-
-    /*clearResults(){
-    let childs = document.querySelectorAll('li');
-    const parentUl = document.querySelector('.results');
-    let childsLength = childs.length;
-    for(let i=0;i <= childsLength; i++){
-    	parentUl.removeChild(childs[i]);
-    	
-    }
-    
-    }*/
-
   }, {
     key: "clearResults",
     value: function clearResults() {
