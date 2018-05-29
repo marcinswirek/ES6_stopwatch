@@ -12,3 +12,4 @@ a:hover { transform: scale(1.1) rotate(1deg); box-shadow: 0 0 15px black; }
 .stopwatch { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 150px; margin: 5px auto; height: 50px; font-size: 20px; font-weight: 900; background-color: rgba(255, 255, 255, 0.6); box-shadow: 0 0 15px black; border-radius: 7px; }
 
 .results { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; font-size: 20px; width: 17%; background-color: rgba(255, 255, 255, 0.6); list-style-type: none; font-weight: 900; margin-left: 50vw; box-shadow: 0 0 15px black; border-radius: 7px; }
+/*# sourceMappingURL=style.css.map */
