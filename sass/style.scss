@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|Raleway');
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|Raleway");
 
 // Variables
 $black: black;
@@ -7,76 +7,76 @@ $font-size-m: 20px;
 
 // Content
 * {
-    box-sizing: border-box;
-    //border: 1px solid red;
+  box-sizing: border-box;
+  //border: 1px solid red;
 }
 
 body {
-    font-family: 'Raleway', 'Quicksand', sans-serif;
-    margin: 0 auto;
-    background-image: url('../images/stoper.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  font-family: "Raleway", "Quicksand", sans-serif;
+  margin: 0 auto;
+  background-image: url("../images/stoper.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 nav {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 a {
-    height: 40px;
-    width: 150px;
-    margin: 10px;
-    color: $black;
-    font-weight: 700;
-    background-color: rgba($white, .6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: .3s all linear;
-    box-shadow: 0 0 7px $black;
-    &:hover {
-        transform: scale(1.1) rotate(1deg);
-        box-shadow: 0 0 15px $black;
-    }
+  height: 40px;
+  width: 150px;
+  margin: 10px;
+  color: $black;
+  font-weight: 700;
+  background-color: rgba($white, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s all linear;
+  box-shadow: 0 0 7px $black;
+  &:hover {
+    transform: scale(1.1) rotate(1deg);
+    box-shadow: 0 0 15px $black;
+  }
 }
 
 .stopwatch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    margin: 5px auto;
-    height: 50px;
-    font-size: $font-size-m;
-    font-weight: 900;
-    background-color: rgba($white, .6);
-    box-shadow: 0 0 15px $black;
-    border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin: 5px auto;
+  height: 50px;
+  font-size: $font-size-m;
+  font-weight: 900;
+  background-color: rgba($white, 0.6);
+  box-shadow: 0 0 15px $black;
+  border-radius: 7px;
 }
 
 .results {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: $font-size-m;
-    width: 17%;
-    background-color: rgba($white, .6);
-    list-style-type: none;
-    font-weight: 900;
-    margin-left: 50vw;
-    box-shadow: 0 0 15px $black;
-    border-radius: 7px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-m;
+  width: 15%;
+  background-color: rgba($white, 0.6);
+  list-style-type: none;
+  font-weight: 900;
+  box-shadow: 0 0 15px $black;
+  border-radius: 7px;
 }
