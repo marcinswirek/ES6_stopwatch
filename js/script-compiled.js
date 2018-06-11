@@ -80,11 +80,11 @@ var StopWatch = function () {
   }, {
     key: "results",
     value: function results(times) {
-      var elementLi = document.createElement("li");
-      var resultsEl = document.querySelector(".results");
+      var elementList = document.createElement("li");
+      var resultsElements = document.querySelector(".results");
       if (this.times.minutes !== 0 || this.times.seconds !== 0 || this.times.miliseconds !== 0) {
-        elementLi.innerHTML = "" + this.format(this.times);
-        resultsEl.appendChild(elementLi);
+        elementList.innerHTML = "" + this.format(this.times);
+        resultsElements.appendChild(elementList);
       }
     }
   }, {
@@ -113,11 +113,7 @@ var StopWatch = function () {
   return StopWatch;
 }();
 
-//create instance of stopWatch class
-
 var stopWatch = new StopWatch(document.querySelector(".stopwatch"));
-
-//Add event listeners
 
 var stopButton = document.getElementById("stop");
 stopButton.addEventListener("click", function () {

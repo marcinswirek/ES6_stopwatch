@@ -61,15 +61,15 @@ class StopWatch {
   }
 
   results(times) {
-    let elementLi = document.createElement("li");
-    let resultsEl = document.querySelector(".results");
+    let elementList = document.createElement("li");
+    let resultsElements = document.querySelector(".results");
     if (
       this.times.minutes !== 0 ||
       this.times.seconds !== 0 ||
       this.times.miliseconds !== 0
     ) {
-      elementLi.innerHTML = `${this.format(this.times)}`;
-      resultsEl.appendChild(elementLi);
+      elementList.innerHTML = `${this.format(this.times)}`;
+      resultsElements.appendChild(elementList);
     }
   }
 
@@ -92,11 +92,7 @@ class StopWatch {
   }
 }
 
-//create instance of stopWatch class
-
 const stopWatch = new StopWatch(document.querySelector(".stopwatch"));
-
-//Add event listeners
 
 let stopButton = document.getElementById("stop");
 stopButton.addEventListener("click", () => stopWatch.stop());
